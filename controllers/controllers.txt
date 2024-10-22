@@ -1,0 +1,14 @@
+Contain business logic and handle requests.
+
+
+Process data, interact with models, return response.
+
+Contains logic for handling requests and responses.
+
+SYNTAX
+
+exports.method = (req, res) => { 
+                    /* logic */ 
+                    }
+
+Controllers: Are concerned with “how the data is processed when that route is accessed” (e.g., “fetch products from the database” or “create a new user”).

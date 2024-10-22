@@ -1,0 +1,36 @@
+Routes:
+   Are concerned with defining “what happens when a user accesses a specific URL” (e.g., /products or /users).
+   Decides which controller function should be called based on the URL and HTTP method (e.g., GET /products).
+
+ Define endpoints and map HTTP methods to logic.
+
+ Route requests to the appropriate controller.
+
+ SYNTAX:
+ router.get('/products', controller.method)
+
+
+
+ EXAMPLE:
+
+ Client (Browser)
+   |
+   | (GET Request to /products)
+   |
+   V
++---------------------+
+|        Route         |
+| GET /products        |
+| Calls getAllProducts |
++---------------------+
+   |
+   V
++-----------------------------+
+|        Controller            |
+|  getAllProducts function     |
+| - Fetches data from database |
+| - Sends JSON response        |
++-----------------------------+
+   |
+   V
+Database
